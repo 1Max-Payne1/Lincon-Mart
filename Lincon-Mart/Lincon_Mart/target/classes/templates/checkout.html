@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Lincon Mart</title>
+</head>
+
+<body>
+
+    <body class="bg-light">
+
+        <div class="container ">
+            <main>
+                <div class="py-5 text-center">
+                    <img class="d-block mx-auto mb-4" src="dr amulet.jpg" alt="" width="150" height="140">
+                    <strong>
+                        <h2>Payment Window</h2>
+                    </strong>
+                    <p class="lead">Thanks For Choosing Us. We Hope You Had A Quality Time Shopping Here.</p>
+                    <p class="lead"> Plz Proceed With The Payment Process...</p>
+                </div>
+
+                <div class="container ">
+                <div class="row g-5">
+                    <div class="col-md-5 col-lg-4 order-md-last">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Your cart</span>
+                            <span class="badge bg-primary rounded-pill">3</span>
+                        </h4>
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                <div>
+                                    <h6 class="my-0">Product</h6>
+                                    <small class="text-muted">Dr Strange Amulet</small>
+                                </div>
+                                <span class="text-muted">$300</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                <div>
+                                    <h6 class="my-0">Special Discount</h6>
+                                    <small class="text-muted"></small>
+                                </div>
+                                <span class="text-muted">$50</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                <div>
+                                    <h6 class="my-0">GST </h6>
+                                    <small class="text-muted"></small>
+                                </div>
+                                <span class="text-muted">$5</span>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Total </span>
+                                <strong>$245</strong>
+                            </li>
+                            <div id="paypal-button-container"></div>
+                        </ul>
+
+
+                    </div>
+                </div> 
+            </main>
+
+            <script
+            src="https://www.paypal.com/sdk/js?client-id=AWWMj-bpEeOhsSOFz7S-XXWVQLTOXH5DTuhWrkX1LvAhUJjjqg7zIIDUVyd_xTpwGNCUXiiYR_dA57tC"></script>
+         <script src="/PayPal/index.js"></script>
+              
+
+             <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a th:href="@{'/index'}" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a th:href="@{'/electronics'}" class="nav-link px-2 text-muted">Electronics</a></li>
+        <li class="nav-item"><a th:href="@{'/clothes'}" class="nav-link px-2 text-muted">Clothes</a></li>
+        <li class="nav-item"><a th:href="@{'/featured'}" class="nav-link px-2 text-muted">Featured</a></li>
+        <li class="nav-item"><a th:href="@{'/contact'}" class="nav-link px-2 text-muted">Contact Us</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2022 Lincon Mart, Inc</p>
+      <p class="text-center text-muted">Developed By Mohammad Yasir <span>&#x1F609</span></p>
+    </footer>
+  </div>
+        </div>
+
+
+        <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <script src="form-validation.js"></script>
+
+    </body>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>

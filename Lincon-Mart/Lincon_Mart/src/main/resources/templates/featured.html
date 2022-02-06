@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Lincon Mart</title>
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">>
+      <div class="container-fluid ">
+        <em>
+          <h2> <a class="navbar-brand" th:href="@{'/index'}">Lincon Mart</a></h2>
+        </em>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page"  th:href="@{'/index'}">Merchandise <span
+                  class="badge rounded-pill bg-warning text-dark">New</span></a>
+
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link " th:href="@{'/electronics'}">Electronics</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" th:href="@{'/accessories'}" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Accessories
+              </a>
+              <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" th:href="@{'/clothes'}">Clothes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " th:href="@{'/featured'}">Featured</a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link " th:href="@{'/contact'}">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="so, wat do ya'want...." aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+          
+        </div>
+      </div>
+      <<< </nav>
+      
+      <div class="container-fluid mx-4">
+        <div class="bxc-grid__row   bxc-grid__row--light  ">
+          <div class="bxc-grid__column  bxc-grid__column--12-of-12   bxc-grid__column--light">
+            <div class="bxc-grid__content   bxc-grid__content--light celwidget"
+              cel_widget_id="acsux-widgets_content-grid_merchandised-search-4_row2-col1"
+              data-csa-c-id="61o0rp-a4bw5q-ijlpew-5cgauj"
+              data-cel-widget="acsux-widgets_content-grid_merchandised-search-4_row2-col1">
+              <script type="text/javascript">
+                function handleIframeSize(obj) {
+
+                  observePopUpIframe(obj)
+
+                  function resizeIframe(obj) {
+                    if (obj && obj.contentWindow && obj.contentWindow.document && obj.contentWindow.document.body
+                      && obj.contentWindow.document.body.offsetHeight && obj.contentWindow.document.body.offsetHeight > 200) {
+                      obj.style.height = obj.contentWindow.document.body.offsetHeight + 'px';
+                    } else {
+                      obj.style.height = '200px';
+                    }
+                  };
+
+                  function observePopUpIframe(obj) {
+                    const iframeContent = obj.contentWindow.document.body;
+                    const config = { attributes: true, childList: true, subtree: true };
+
+                    const callback = function () {
+                      resizeIframe(obj);
+                    };
+
+                    const observer = new MutationObserver(callback);
+                    observer.observe(iframeContent, config);
+
+                    obj.contentWindow.onbeforeunload = function (e) {
+                      observer.disconnect();
+                    };
+                  }
+                }
+              </script>
+              <div class="bxc-grid__image   bxc-grid__image--light">
+                <a href="/gp/product/B08V5LK1JZ/ref=s9_acss_bw_cg_revamp1_2a1_w?pf_rd_m=A1K21FY43GMZF8&amp;pf_rd_s=merchandised-search-4&amp;pf_rd_r=7PJ52RTJ0M3TY74QK74F&amp;pf_rd_t=101&amp;pf_rd_p=6e6c4f98-ae91-4d5c-bc4e-0d100ea828b7&amp;pf_rd_i=13773797031"
+                  aria-label="realme smart plug">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/CEPC/Wearables/Realme-smart-plug_1500x300.jpg"
+                    alt="realme smart plug">
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-4">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Apple MacBook Pro. <span class="text-muted">It’ll blow your
+                mind.</span>
+            </h2>
+            <p class="lead">Apple MacBook Pro is a macOS laptop with a 13.30-inch display that has a resolution of
+              2560x1600 pixels. It is powered by a Core i5 processor and it comes with 12GB of RAM. The Apple MacBook
+              Pro packs 512GB of SSD storage. Connectivity options include Wi-Fi 802.11 ac, Bluetooth and it comes with
+              2 USB ports (2 x USB 3.0), Mic In ports.
+            </p>
+          </div>
+          <div class="col-md-5 my-4">
+            <img src="featLap.jpg"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+              height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+            </img>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, Apple TV. <span class="text-muted">See for yourself.</span>
+            </h2>
+            <p class="lead">Apple TV is a digital media player and microconsole that is developed and marketed by Apple.
+              It is a small network appliance hardware that plays received media datas such as video and audio to a
+              television set or external display. </p>
+          </div>
+          <div class="col-md-5 order-md-1 my-5">
+            <img src="featApple-tv.jpg"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+              height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+            </img>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a th:href="@{'/index'}" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a th:href="@{'/electronics'}" class="nav-link px-2 text-muted">Electronics</a></li>
+        <li class="nav-item"><a th:href="@{'/clothes'}" class="nav-link px-2 text-muted">Clothes</a></li>
+        <li class="nav-item"><a th:href="@{'/featured'}" class="nav-link px-2 text-muted">Featured</a></li>
+        <li class="nav-item"><a th:href="@{'/contact'}" class="nav-link px-2 text-muted">Contact Us</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2022 Lincon Mart, Inc</p>
+      <p class="text-center text-muted">Developed By Mohammad Yasir <span>&#x1F609</span></p>
+    </footer>
+  </div>
+
+      <!-- Optional JavaScript; choose one of the two! -->
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
